@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H5C7C3B0D",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "parttimejob",/*应用名称，程序桌面图标名称*/
@@ -199,5 +199,61 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"css/homepage.css",
+					"imgs/Marker-48.png",
+					"imgs/QR Code-50.png",
+					"imgs/Search-48.png",
+					"login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"js/bootstrap.min.js",
+					"js/jquery-1.10.2.min.js",
+					"css/bootstrap.min.css",
+					"register.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"register.html": {
+				"resources": [
+					"js/jquery-3.1.1.min.js",
+					"js/bootstrap.min.js",
+					"css/bootstrap.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"fonts/glyphicons-halflings-regular.svg",
+				"js/jquery-3.1.1.js",
+				"imgs/individual-backgroungimg.jpg",
+				"fonts/glyphicons-halflings-regular.ttf",
+				"css/bootstrap-theme.min.css",
+				"fonts/glyphicons-halflings-regular.woff",
+				"individual.html",
+				"css/bootstrap-theme.min.css.map",
+				"fonts/glyphicons-halflings-regular.woff2",
+				"css/bootstrap.css.map",
+				"css/bootstrap.css",
+				"css/bootstrap.min.css.map",
+				"js/npm.js",
+				"js/bootstrap.js",
+				"css/bootstrap-theme.css",
+				"fonts/glyphicons-halflings-regular.eot",
+				"forget.html",
+				"css/bootstrap-theme.css.map"
+			]
+		}
+	}
 }
