@@ -18,6 +18,29 @@
 			}
 
 		</style>
+		<script>
+		$(function(){
+			$('#register').click(function(){
+				var obj={}
+				
+			 obj.name=$('#name').val();
+             obj.pass=$('#pass').val();
+             obj.phone=$('#phone').val();
+               
+                $.ajax({
+                    type: "get",
+                    url: "http://localhost:59297/api/Regist/Regist",
+                      data: {"regist":JSON.stringify(obj)},
+                   success:function(data){
+                   	alert(data);
+                   }
+                });
+				 
+				     
+			});
+		});
+		</script>
+
 	</head>
 	<body>
 		<div style="text-align: center;">
