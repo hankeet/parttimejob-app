@@ -1,0 +1,32 @@
+{
+	"index.html": {
+		"resources": [
+			"css/homepage.css",
+			"imgs/Marker-48.png",
+			"imgs/QR Code-50.png",
+			"imgs/Search-48.png",
+			"login.html"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"js/bootstrap.min.js",
+			"js/jquery-1.10.2.min.js",
+			"css/bootstrap.min.css",
+			"register.html"
+		],
+		"refer": [
+			"register.html"
+		]
+	},
+	"register.html": {
+		"resources": [
+			"js/jquery-3.1.1.min.js",
+			"js/bootstrap.min.js",
+			"css/bootstrap.min.css"
+		]
+	}
+}
