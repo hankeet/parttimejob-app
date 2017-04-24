@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<style>
+			
+			h5.mui-content-padded {
+				margin-left: 3px;
+				margin-top: 20px !important;
+			}
+			
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+		</style>
+		
+		
+		
+		<!--
+        	作者：kyleyue@outlook.com
+        	时间：2017-04-16
+        	描述：以下是页面传值的js
+        -->
+        
+        <script type="text/javascript">
+        	function to(){
+        		
+      		var  parm1 =document.getElementById("aa").innerText; 
+      		var myurl="index.html"+"?"+"parm1="+parm1;
+      		window.location.assign(encodeURI(myurl));
+//	      		document.location.href="index.html?aa="+getval;   
+	//			alert(getval);
+        	}
+        </script>
+          
+        
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">选择城市</h1>
+		</header>
+		
+		<div id="allmap" style="margin-top: 50px;font-size: small;margin-left: 4%;margin-right: 4%;">
+		   <span style="color: #999999;">当前城市</span>
+		   <div class="mui-btn-grey" style="margin-top: 5px;height: 30px;padding-top: 4px;">
+		   	<a href="index.html">
+		   		<div class="" style="color:#333333;text-align: center;">
+		   			<span class="" style="font-size:14px;">定位到当前城市</span>
+		   		</div>
+		   	</a>
+		   </div>
+		   
+		</div>
+		<div class="" style="margin-top: 10px;margin-left: 4%;margin-right: 4%;">
+			<!--热门城市-->
+			<span style="color: #999999; font-size: small;">热门城市</span>
+			<div class="mui-content" >
+				<!--触发字符：mgrid即九宫格-->
+				<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#">
+							<div class="mui-media-body" onclick="to()" id="aa">昆明</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#">
+							<div class="mui-media-body" onclick="to()" id="aa">临沧</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#">
+							<div class="mui-media-body" onclick="to()" id="aa">北京</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#">
+							<div class="mui-media-body" onclick="to()" id="aa">太原</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<div class="mui-media-body" onclick="to()" id="aa">广州</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<div class="mui-media-body">更多</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--其他城市-->
+		<div class="" style="margin-top: 10px;margin-left: 4%;margin-right: 4%;">
+			<span style="color: #999999; font-size: small;">其他城市</span>
+			<div class="mui-content">
+			<div class="mui-content-padded">
+				<button id='showCityPicker' class="mui-btn mui-btn-blue" type='button' style="width: 100%;">点此选择</button>
+				<div id='cityResult' class="ui-alert"></div>
+			</div>
+		</div> 
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//普通示例
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = "你选择的城市是:" + items[0].text + " " + items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+				});
+			})(mui, document);
+		</script>
+		</div>
+		
+	</body>
+
+</html>
