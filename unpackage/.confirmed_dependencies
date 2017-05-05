@@ -5,10 +5,26 @@
 			"imgs/Marker-48.png",
 			"imgs/QR Code-50.png",
 			"imgs/Search-48.png",
-			"login.html"
+			"login.html",
+			"fonts/mui-icons-extra.ttf",
+			"imgs/muwu.jpg",
+			"css/lunbo.css",
+			"js/mui.min.js",
+			"imgs/yuantiao.jpg",
+			"fonts/mui.ttf",
+			"Search.html",
+			"Location.html",
+			"imgs/shuijiao.jpg",
+			"css/mui.min.css",
+			"imgs/cbd.jpg",
+			"css/icons-extra.css",
+			"index.html"
 		],
 		"refer": [
-			"login.html"
+			"login.html",
+			"Search.html",
+			"Location.html",
+			"index.html"
 		]
 	},
 	"login.html": {
@@ -27,6 +43,43 @@
 			"js/jquery-3.1.1.min.js",
 			"js/bootstrap.min.js",
 			"css/bootstrap.min.css"
+		]
+	},
+	"Search.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/mui.css",
+			"css/icons-extra.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Location.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"css/app.css",
+			"js/mui.poppicker.js",
+			"js/city.data.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"js/city.data-3.js",
+			"index.html",
+			"Search.html"
+		],
+		"refer": [
+			"index.html",
+			"Search.html"
+		]
+	},
+	"content.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/content.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/js/content.js"
 		]
 	}
 }

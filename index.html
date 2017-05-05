@@ -8,6 +8,15 @@
     <link href="css/mui.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
     <link rel="stylesheet" href="css/lunbo.css" />
+    <link rel="stylesheet" href="css/content.css"/>
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    	<link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/appcss/ui-base.css">
+        <link rel="stylesheet" href="css/appcss/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcss/appcan.control.css">
+        <link rel="stylesheet" href="index/css/index.css">
     <style type="text/css">
     	#scanner{
     		margin-top: 2px;
@@ -20,7 +29,7 @@
     	时间：2017-04-18
     	描述：地址页面传值
     -->
-     <script>
+     <!--<script>
      	function  showvalf(){ 
       	var  thisURL=decodeURI(location.href);   
         var  getval =thisURL.split('?')[1];
@@ -29,7 +38,7 @@
         var  parm1=getval;
 	    document.getElementById('bb').innerText=showval;  
 	    }   
-    </script>
+    </script>-->
     
     
     
@@ -41,7 +50,7 @@
       
       
 </head>
-<body onload="showvalf()" >
+<body >  
 	<script>
 			mui.init({
 				swipeBack: true, //启用右滑关闭功能
@@ -56,14 +65,11 @@
 	
 	<div id="refreshContainer" style="">
 		<header class="mui-bar mui-bar-nav mui-bar-transparent" style="">
-			<a href="">
-				<span class="mui-icon-extra mui-icon-extra-sweep" style="margin-right: 45%;"></span>
+			<a href="" class="mui-icon-extra mui-icon-extra-sweep" style="margin-top: 12px;">
+				
 			</a> 
-			<a href="Location.html">
-				<span class="mui-icon mui-icon-location-filled" style=""  id="bb">ddd</span>
-			</a>   
-			<a href="Search.html">
-				<span class="mui-icon mui-icon-search mui-pull-right" style=""></span>
+			<a href="Search.html" class="mui-icon mui-icon-search mui-pull-right">
+				
 			</a>
 		</header>
 		
@@ -127,50 +133,107 @@
     </script>
 		
 		<div class="mui-content">
-			<!--触发字符：mgrid即九宫格-->
+			<!--触发字符：mgrid即九宫格--> 
 			<ul class="mui-table-view mui-grid-view mui-grid-9">
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="#">
-						<span class="mui-icon mui-icon-home"></span>
-						<div class="mui-media-body">Home</div>
+					
+					<a href="inHome.html">
+						<span class="mui-icon mui-icon-home" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">在家做</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
-						<div class="mui-media-body">Email</div>
+						<span class="mui-icon mui-icon-map" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">附近兼职</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-chatbubble"></span>
-						<div class="mui-media-body">Chat</div>
+						<span class="mui-icon mui-icon-compose" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">去公司</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-location"></span>
-						<div class="mui-media-body">location</div>
+						<span class="mui-icon mui-icon-paperplane" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">义工旅行</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-search"></span>
-						<div class="mui-media-body">Search</div>
+						<span class="mui-icon mui-icon-flag" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">周末约</div>
 					</a>
 				</li>
 		
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-more"></span>
-						<div class="mui-media-body">more</div>
+						<span class="mui-icon mui-icon-more" style="color: dodgerblue;"></span>
+						<div class="mui-media-body" style="font-size: 13px;">敬请期待</div>
 					</a>
 				</li>
 			</ul>
 		</div>
+		<div style="height: 10px;background-color: #8F8F94;">
+			
+		</div>
 		
 	</div>
+	
+	
+	<div  >
+		<div class="">
+			<div style="color: red;font-size:15px;margin-top: 5px;"><span>今日热门</span></div>
+			<div style="margin-top: 10px;">
+				<div class="jobname" style="">有电脑兼职</div>
+				<div class="jobcree" style="">
+					<div class="creenumber" style="float: left;font-size: 16px;">2</div>
+					<div style="float: left;padding-top: 3px; ">元</div>
+					<div style="float: left;padding-top: 3px;">/</div>
+					<div style="padding-top: 3px;">天</div>
+				</div>			
+			</div>
+							
+			<div class="localtime" style="margin-top: -2px;">
+				<div class="joblocal" style="">昆明</div>
+				<div class="jobtime" style="">3月5日-3月7日</div>
+			</div>
+			<div style=" ">
+				<div class="posttime" style="color: #737373;font-size: 12px;">昨天</div>
+				<div class="IstrueJob" style="color:orange;font-size: 12px;">实名认证</div>
+			</div>								
+		</div>
+						
+		<div class="spotline" style="margin-top: -2px;">
+			<hr />
+		</div>	
+						
+		<div class="">
+			<div style="">
+				<div class="jobname" style="">有电脑兼职</div>
+					<div class="jobcree" style="">
+					<div class="creenumber" style="float: left;font-size: 16px;">2</div>
+					<div style="float: left;padding-top: 3px; ">元</div>
+					<div style="float: left;padding-top: 3px;">/</div>
+					<div style="padding-top: 3px;">天</div>
+				</div>
+			</div>
+							
+			<div class="localtime" style="margin-top: -2px;">
+				<div class="joblocal" style="">昆明</div>
+				<div class="jobtime" style="">3月5日-3月7日</div>
+			</div>
+			<div style=" ">
+				<div class="posttime" style="color: #737373;font-size: 12px;">昨天</div>
+				<div class="IstrueJob" style="color:orange;font-size: 12px;">实名认证</div>
+			</div>				
+		</div>
+		<div class="" style="margin-top: -2px;">
+			<hr />
+		</div>
+							
+	</div>
 </body>
-
 
 </html>

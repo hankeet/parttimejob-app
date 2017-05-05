@@ -41,7 +41,7 @@
         <script type="text/javascript">
         	function to(){
         		
-      		var  parm1 =document.getElementById("aa").innerText; 
+      		var  parm1 =document.getElementsByName("aa").innerText; 
       		var myurl="index.html"+"?"+"parm1="+parm1;
       		window.location.assign(encodeURI(myurl));
 //	      		document.location.href="index.html?aa="+getval;   
@@ -79,27 +79,27 @@
 				<ul class="mui-table-view mui-grid-view mui-grid-9">
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 						<a href="#">
-							<div class="mui-media-body" onclick="to()" id="aa">昆明</div>
+							<div class="mui-media-body" onclick="to()" name="aa">昆明</div>
 						</a>
 					</li>
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 						<a href="#">
-							<div class="mui-media-body" onclick="to()" id="aa">临沧</div>
+							<div class="mui-media-body" onclick="to()" name="aa">临沧</div>
 						</a>
 					</li>
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 						<a href="#">
-							<div class="mui-media-body" onclick="to()" id="aa">北京</div>
+							<div class="mui-media-body" onclick="to()" name="aa">北京</div>
 						</a>
 					</li>
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 						<a href="#">
-							<div class="mui-media-body" onclick="to()" id="aa">太原</div>
+							<div class="mui-media-body" onclick="to()" name="aa">太原</div>
 						</a>
 					</li>
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 						<a href="#">
-							<div class="mui-media-body" onclick="to()" id="aa">广州</div>
+							<div class="mui-media-body" onclick="to()" name="aa">广州</div>
 						</a>
 					</li>
 					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">

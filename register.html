@@ -20,6 +20,7 @@
 		</style>
 		<script>
 		$(function(){
+			if(document.getElementById("students_regisit").style.display=="block"){
 			$('#register').click(function(){
 				var obj={}
 				
@@ -35,68 +36,190 @@
                    	alert(data);
                    }
                 });
-				 
-				     
+			});
+			alert("123");
+			}
+			else
+			alert("2435");
+			$('#seller_next').click(function(){
+				document.getElementById('students_regisit').style.display='none';
+				document.getElementById('sellerstudents_regisit').style.display='none';
 			});
 		});
+		function get_regisit_type(evt)
+		{
+			var evt=evt||window.event;
+			var e=evt.srcElement||evt.target;
+			
+			if(e.value=="1")
+			{
+				document.getElementById('sellerstudents_regisit').style.display='none';
+				document.getElementById('students_regisit').style.display='block';
+				document.getElementById('sellers_regisit_next').style.display='none';
+			}
+			else if(e.value=="2")
+			{
+				document.getElementById('students_regisit').style.display='none';
+				document.getElementById('sellerstudents_regisit').style.display='block';
+				document.getElementById('sellers_regisit_next').style.display='none';
+			}
+		}
+		function get_seller_regisit_next(evt)
+		{
+			var evt=evt||window.event;
+			var e=evt.srcElement||evt.target;
+			document.getElementById('sellerstudents_regisit').style.display='none';
+			document.getElementById('sellers_regisit_next').style.display='block';
+		}
+		function get_seller_regisit_forest(evt)
+		{
+			var evt=evt||window.event;
+			var e=evt.srcElement||evt.target;
+			document.getElementById('sellerstudents_regisit').style.display='block';
+			document.getElementById('sellers_regisit_next').style.display='none';
+		}
 		</script>
 
 	</head>
-	<body>
+	<body >
 		<div style="text-align: center;">
 			<h1>注册</h1>
 			<hr/>
 		</div>
-		
+		<div style="display: block;">
 			<div class="form-group" style="text-align: center;">
-				<input type="radio" name="way" id="student" value="1" runat="server"checked/> <label >学生</label>&nbsp;
-			<input type="radio" name="way" id="seller" value="2" /> <label>商家</label>
+				<input type="radio" name="way" id="student" value="1" onclick="get_regisit_type();" runat="server" checked/> <label >学生</label>&nbsp;
+				<input type="radio" name="way" id="seller" value="2" onclick="get_regisit_type();"/> <label>商家</label>
 			</div>
+		</div>	
+		<div id="students_regisit" style="display: block;">
 			<div class="form-group">
 				<div style="float:center;display: flex;">
-				<label for="phone" style="width: 80px; padding-right: 0px;" class="col-sm-2">用户名</label>
-				<input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名" />
+					<label for="phone" style="width: 80px; padding-right: 0px;" class="col-sm-2">用户名</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名" />
 				</div>
 			</div>
 			
 			<div class="form-group">
 				<div style="float:center;display: flex;">
-				<label for="phone" style="width: 80px;padding-right: 0px;" class="col-sm-2">手机号</label>
-				<input type="text" class="form-control" id="phone" name="phone" placeholder="请输入您的手机号" />
+					<label for="phone" style="width: 80px;padding-right: 0px;" class="col-sm-2">手机号</label>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="请输入您的手机号" />
 				</div>
 			</div>
 			
 				<div class="form-group">
 					<div style="float:center;display: flex;">
-					<label for="code" style="width: 70px;padding-right: 0px;" class="col-sm-2">验证码</label>
-					<input maxlength="200" autocomplete="off" type="text" class="form-control" style="width: 100px;" name="code" id="code"/>
-					&nbsp;
-					<button name="code" id="code" onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
-				<!--
-					<button onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
-					<span id="msg_code" style="color:red;">（发送验证后60秒可再次发送）</span>
-			    -->
-			   
-			    </div>
+						<label for="code" style="width: 70px;padding-right: 0px;" class="col-sm-2">验证码</label>
+						<input maxlength="200" autocomplete="off" type="text" class="form-control" style="width: 100px;" name="code" id="code"/>
+						&nbsp;
+						<button name="code" id="code" onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
+						<!--
+							<button onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
+							<span id="msg_code" style="color:red;">（发送验证后60秒可再次发送）</span>
+			    		-->
+			   	 	</div>
 				</div>
 			<div class="form-group">
 				<div style="float:center;display: flex;">
-				<label for="password" style="width: 80px;padding-right: 0px;"  class="col-sm-2">密码</label>
-
-				<input type="text" class="form-control" id="pass" name="pass" placeholder="请输入密码" />
-
-				<input type="text" class="form-control" id="pass" name="password" placeholder="请输入密码" />
-
+					<label for="password" style="width: 80px;padding-right: 0px;"  class="col-sm-2">密码</label>
+					<input type="text" class="form-control" id="pass" name="pass" placeholder="请输入密码" />
 				</div>
 			</div>
 			<div class="form-group">
 				<div style="float:center;display: flex;">
-				<label for="repassword"style="width: 80px;font-size: 12px;padding-right: 0px;" class="col-sm-1">重复密码</label>
-				<input type="text" class="form-control" id="repassword" name="repassword" placeholder="请重新输入密码" />
+					<label for="repassword"style="width: 80px;font-size: 12px;padding-right: 0px;" class="col-sm-1">重复密码</label>
+					<input type="text" class="form-control" id="repassword" name="repassword" placeholder="请重新输入密码" />
 				</div>
+				<div class="form-group col-sm-2">
+					<button type="submit" name="register"id="register" class="btn btn-default">提交</button>
+				</div>
+			</div>
+	
+		</div>
+		<div id="seller" style="display:block;">
+			<div id="sellerstudents_regisit" style="display: none;">
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="phone" style="width: 80px; padding-right: 0px;" class="col-sm-2">商家名</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名" />
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="phone" style="width: 80px;padding-right: 0px;" class="col-sm-2">电话号</label>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="请输入您的手机号" />
+				</div>
+			</div>
+			
+				<div class="form-group">
+					<div style="float:center;display: flex;">
+						<label for="code" style="width: 70px;padding-right: 0px;" class="col-sm-2">验证码</label>
+						<input maxlength="200" autocomplete="off" type="text" class="form-control" style="width: 100px;" name="code" id="code"/>
+						&nbsp;
+						<button name="code" id="code" onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
+						<!--
+							<button onclick="sendCode()" class="btn btn-default">获取手机验证码</button>
+							<span id="msg_code" style="color:red;">（发送验证后60秒可再次发送）</span>
+			    		-->
+			   
+			    	</div>
+				</div>
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="password" style="width: 80px;padding-right: 0px;"  class="col-sm-2">密码</label>
+					<input type="text" class="form-control" id="pass" name="pass" placeholder="请输入密码" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="repassword"style="width: 80px;font-size: 12px;padding-right: 0px;" class="col-sm-1">重复密码</label>
+					<input type="text" class="form-control" id="repassword" name="repassword" placeholder="请重新输入密码" />
+				</div>
+			</div>
+			<div class="form-group col-sm-2">
+				<input type="button" name="seller_next"id="seller_next" style="float: center;" class="btn btn-default" onclick="get_seller_regisit_next();" value="下一步"/>
+			</div>
+		</div>
+			<div id="sellers_regisit_next" style="display: none;">
+			<div class="form-group">
+				<label for="phone" style="width: 80px; padding-right: 0px;" class="col-sm-2">公司类型</label>
+				<input type="radio" name="type" id="" value="1"  runat="server" checked/> <label >个人</label>&nbsp;
+				<input type="radio" name="type" id="" value="2" /> <label>私营</label>
+				<input type="radio" name="type" id="" value="3" /> <label>公企</label>
+			</div>
+			
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="maser" style="width: 80px; padding-right: 0px;" class="col-sm-2">负责人</label>
+					<input type="text" class="form-control" id="" name="" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="masterid" style="width: 80px; padding-right: 0px;" class="col-sm-2">证件号</label>
+					<input type="text" class="form-control" id="" name="" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="story_type" style="width: 80px; padding-right: 0px;" class="col-sm-2">类型</label>
+					<input type="text" class="form-control" id="" name="" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div style="float:center;display: flex;">
+					<label for="address" style="width: 80px; padding-right: 0px;" class="col-sm-2"><font style="font-size: 11px;">公司地址</font></label>
+					<input type="text" class="form-control" id="" name="" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group col-sm-2">
+				<input type="button" name="seller_next"id="seller_forest" style="float: center;" class="btn btn-default" onclick="get_seller_regisit_forest();" value="上一步"/>
 			</div>
 			<div class="form-group col-sm-2">
 				<button type="submit" name="register"id="register" class="btn btn-default">提交</button>
 			</div>
+		</div>
+		</div>
 	</body>
 </html>
