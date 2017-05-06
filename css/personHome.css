@@ -1,0 +1,45 @@
+.personalCard{
+	margin-top: 55px;
+	margin-bottom: 5%;
+	
+}
+.firstLine{
+	height: 104px;
+	
+}
+.headPicture{
+	margin-top: 2px;
+	margin-left: 1%;
+	border: solid;
+	border-width: 1px;
+	border-color:#C8C7CC;
+	width: 35%;
+	height: 100px;
+	border-radius: 10%;
+	float: left;
+	background-color: whitesmoke;
+}
+
+
+
+.personInfo{
+	margin-right: 1%;
+	margin-top: 2px;
+	border: solid;
+	border-width: 1px;
+	border-color:#C8C7CC;
+	width: 60%;
+	height: 100px;
+	float: right;
+	background-color: whitesmoke;
+}
+.personName{
+	margin-top: 3%;
+	margin-left: 4%;
+	font-family: "微软雅黑";
+}
+.personStyle{
+	margin-top: 3%;
+	margin-left: 4%;
+}
+

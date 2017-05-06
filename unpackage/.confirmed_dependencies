@@ -1,85 +1,114 @@
 {
-	"index.html": {
-		"resources": [
-			"css/homepage.css",
-			"imgs/Marker-48.png",
-			"imgs/QR Code-50.png",
-			"imgs/Search-48.png",
-			"login.html",
-			"fonts/mui-icons-extra.ttf",
-			"imgs/muwu.jpg",
-			"css/lunbo.css",
-			"js/mui.min.js",
-			"imgs/yuantiao.jpg",
-			"fonts/mui.ttf",
-			"Search.html",
-			"Location.html",
-			"imgs/shuijiao.jpg",
-			"css/mui.min.css",
-			"imgs/cbd.jpg",
-			"css/icons-extra.css",
-			"index.html"
-		],
-		"refer": [
-			"login.html",
-			"Search.html",
-			"Location.html",
-			"index.html"
-		]
-	},
-	"login.html": {
-		"resources": [
-			"js/bootstrap.min.js",
-			"js/jquery-1.10.2.min.js",
-			"css/bootstrap.min.css",
-			"register.html"
-		],
-		"refer": [
-			"register.html"
-		]
-	},
-	"register.html": {
-		"resources": [
-			"js/jquery-3.1.1.min.js",
-			"js/bootstrap.min.js",
-			"css/bootstrap.min.css"
-		]
-	},
-	"Search.html": {
-		"resources": [
-			"css/mui.min.css",
-			"css/mui.css",
-			"css/icons-extra.css",
-			"index.html"
-		],
-		"refer": [
-			"index.html"
-		]
-	},
-	"Location.html": {
-		"resources": [
-			"js/mui.picker.js",
-			"css/app.css",
-			"js/mui.poppicker.js",
-			"js/city.data.js",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css",
-			"js/city.data-3.js",
-			"index.html",
-			"Search.html"
-		],
-		"refer": [
-			"index.html",
-			"Search.html"
-		]
-	},
-	"content.html": {
-		"resources": [
-			"js/mui.min.js",
-			"css/content.css",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"js/js/content.js"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "css/homepage.css",
+      "imgs/Marker-48.png",
+      "imgs/QR Code-50.png",
+      "imgs/Search-48.png",
+      "login.html",
+      "fonts/mui-icons-extra.ttf",
+      "imgs/muwu.jpg",
+      "css/lunbo.css",
+      "js/mui.min.js",
+      "imgs/yuantiao.jpg",
+      "fonts/mui.ttf",
+      "Search.html",
+      "Location.html",
+      "imgs/shuijiao.jpg",
+      "css/mui.min.css",
+      "imgs/cbd.jpg",
+      "css/icons-extra.css",
+      "index.html"
+    ],
+    "refer": [
+      "login.html",
+      "Search.html",
+      "Location.html",
+      "index.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "js/bootstrap.min.js",
+      "js/jquery-1.10.2.min.js",
+      "css/bootstrap.min.css",
+      "register.html"
+    ],
+    "refer": [
+      "register.html"
+    ]
+  },
+  "register.html": {
+    "resources": [
+      "js/jquery-3.1.1.min.js",
+      "js/bootstrap.min.js",
+      "css/bootstrap.min.css"
+    ],
+    "refer": []
+  },
+  "Search.html": {
+    "resources": [
+      "css/mui.min.css",
+      "css/mui.css",
+      "css/icons-extra.css",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Location.html": {
+    "resources": [
+      "js/mui.picker.js",
+      "css/app.css",
+      "js/mui.poppicker.js",
+      "js/city.data.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/city.data-3.js",
+      "index.html",
+      "Search.html"
+    ],
+    "refer": [
+      "index.html",
+      "Search.html"
+    ]
+  },
+  "content.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/content.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/js/content.js"
+    ],
+    "refer": []
+  },
+  "personHome.html": {
+    "resources": [
+      "js/js/headPicture.js",
+      "js/jquery-3.1.1.js",
+      "imgs/yuantiao.jpg",
+      "fonts/mui.ttf",
+      "imgs/cbd.jpg",
+      "css/appcan.icon.css",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "js/js/jquery.min.js",
+      "css/lunbo.css",
+      "js/mui.min.js",
+      "css/content.css",
+      "imgs/shuijiao.jpg",
+      "css/mui.min.css",
+      "css/personHome.css",
+      "js/update.js",
+      "js/bootstrap.min.js",
+      "css/feedback.css",
+      "js/feedback.js",
+      "js/mui.view.js",
+      "css/qunit.css",
+      "js/jquery-1.10.2.min.js"
+    ],
+    "refer": []
+  }
 }

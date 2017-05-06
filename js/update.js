@@ -31,5 +31,4 @@ function update() {
 		}
 	});
 }
-
-mui.os.plus && !mui.os.stream && mui.plusReady(update);
+  

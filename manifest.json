@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "content.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "personHome.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -280,12 +280,39 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"personHome.html": {
+				"resources": [
+					"js/js/headPicture.js",
+					"js/jquery-3.1.1.js",
+					"imgs/yuantiao.jpg",
+					"fonts/mui.ttf",
+					"imgs/cbd.jpg",
+					"css/appcan.icon.css",
+					"css/icons-extra.css",
+					"fonts/mui-icons-extra.ttf",
+					"js/js/jquery.min.js",
+					"css/lunbo.css",
+					"js/mui.min.js",
+					"css/content.css",
+					"imgs/shuijiao.jpg",
+					"css/mui.min.css",
+					"css/personHome.css",
+					"js/update.js",
+					"js/bootstrap.min.js",
+					"css/feedback.css",
+					"js/feedback.js",
+					"js/mui.view.js",
+					"css/qunit.css",
+					"js/jquery-1.10.2.min.js"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
 			"resources": [
 				"fonts/glyphicons-halflings-regular.svg",
-				"js/jquery-3.1.1.js",
 				"imgs/individual-backgroungimg.jpg",
 				"fonts/glyphicons-halflings-regular.ttf",
 				"css/bootstrap-theme.min.css",

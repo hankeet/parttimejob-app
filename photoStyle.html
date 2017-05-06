@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+	    <link rel="stylesheet" href="css/lunbo.css" />
+	    <link rel="stylesheet" href="css/content.css"/>
+	    <link rel="stylesheet" href="css/appcan.icon.css">
+	    <link rel="stylesheet" href="css/personHome.css" />
+	    <script src="js/js/headPicture.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript" src="js/update.js"></script>
+		<script type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8"/>
+		<script type="text/javascript" src="js/js/headPicture.js"></script>
+		
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>  
+		<script src="js/mui.min.js"></script>  
+		<!--<script type="text/javascript" src="js/pet.js"></script>  -->
+		<script type="text/javascript" src="js/js/jquery.min.js"></script>  
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+		<script type="text/javascript" src="js/cropper.js"></script> 
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div id="changeAvatar" class="touxiang" onclick="showActionSheet()" >
+			<img src="imgs/cbd.jpj">
+		</div>
+		<div style="width:90%;margin: 0 auto;margin-top:30px;">
+			<button type="button" class="mui-btn mui-btn-primary mui-btn-block" style="height: 40px;" onclick="postAvatar()">确认提交</button>
+		</div>
+		<div style="text-align: center;z-index: 99;width: 100%;height: 2000px;background-color: #f2f2f2 ;position: absolute;top:40px;left: 0px;display: none;" id="spinner">
+			<div style="width:90px;padding-top:200px;margin:0 auto;height: 100%;">
+				<div style="width:30px;float: left;">
+					<span class="mui-spinner" style="height: 20px;"></span>//等待动画
+				</div>
+				<div style="width:60px;float: left;">请稍等...</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="showEdit" style="width:100%;height: 100%;background-color: #fff;position: absolute;top:60;left: 0;display: none;z-index: 9;">
+			<div id="report" style="width:100%;height: 100%;z-index: 10;">
+				<img id="readyimg" style="width:100%;">
+			</div>
+			<div class="mui-content-padded" style="width:100%;height: 100px;z-index: 110;position: absolute;top:60px;left:0px;">
+				<div class="flex-container" style="">
+					<a><span class="mui-icon mui-icon-closeempty" onclick="closepop()"></span></a>//关闭裁剪窗口
+					<a><span class="mui-icon mui-icon-undo" onclick="rotateimgleft()"></span></a>//左旋转90度
+					<a><span class="mui-icon mui-icon-redo" onclick="rotateimg()"></span></a>//右旋转90度
+					<a><span class="mui-icon mui-icon-checkmarkempty" onclick="confirm()"></span></a>//确定
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>
