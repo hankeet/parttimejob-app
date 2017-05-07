@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/icons-extra.css"/>
+    <link rel="stylesheet" href="css/lunbo.css" />
+    <link rel="stylesheet" href="css/content.css"/>
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="index/css/index.css">
+    <style type="text/css">
+    	#scanner{
+    		margin-top: 2px;
+    	}
+    </style>
+    
+    
+    <!--
+    	作者：kyleyue@outlook.com
+    	时间：2017-04-18
+    	描述：地址页面传值
+    -->
+     <!--<script>
+     	function  showvalf(){ 
+      	var  thisURL=decodeURI(location.href);   
+        var  getval =thisURL.split('?')[1];
+//      var  tmp2=getval.split("&")[0];
+        var  showval= getval.split("=")[1];   
+        var  parm1=getval;
+	    document.getElementById('bb').innerText=showval;  
+	    }   
+    </script>-->
+    
+    
+    
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	mui('.mui-bar-transparent').transparent({ top: 0, offset: 50, duration: 16, scrollby: document.querySelector('.mui-scroll-wrapper') });	
+    </script>
+      
+      
+      
+</head>
+<body >  
+	<script>
+			mui.init({
+				swipeBack: true, //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 5000 //每隔5秒调用一次
+			});
+		</script>
+		
+		
+	
+	<div id="refreshContainer" style="">
+	<div id="slider" class="mui-slider">
+
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="imgs/yuantiao.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="imgs/cbd.jpg">
+				</a>
+			</div>
+
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="imgs/muwu.jpg">
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="imgs/shuijiao.jpg">
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="imgs/yuantiao.jpg">
+				</a>
+			</div>
+
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="imgs/cbd.jpg">
+				</a>
+			</div>
+		</div>
+		<!--通常轮播图中那个小圆点，页面轮播他也会移动-->
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 5000 //每隔5秒调用一次
+		});
+	</script>
+
+	<div class="mui-content">
+		<!--触发字符：mgrid即九宫格-->
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+
+				<a href="inHome.html">
+					<span class="mui-icon mui-icon-person" style="color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;">人才库</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="nearJob.html">
+					<span class="mui-icon-extra mui-icon-extra-topic" style="margin-top: 12px;color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;margin-top: 12px;">管理职位</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="goCompany.html">
+					<span class="mui-icon mui-icon-compose" style="color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;">发布兼职</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="volunteer.html">
+					<span class="mui-icon mui-icon-chatboxes" style="color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;">消息</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="weeks.html">
+					<span class="mui-icon mui-icon-flag" style="color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;">企业兼职</div>
+				</a>
+			</li>
+
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="moreJob.html">
+					<span class="mui-icon mui-icon-more" style="color: dodgerblue;"></span>
+					<div class="mui-media-body" style="font-size: 13px;">敬请期待</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+	
+	
+	
+</body>
+
+</html>
